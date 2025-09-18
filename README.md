@@ -43,4 +43,4 @@ pyinstaller --onefile --add-data "keywords.json;." main.py
 ```
 
 ## Licence
-Restrictive (ver archivo LICENSE)
+Restrictive (view file LICENSE)
