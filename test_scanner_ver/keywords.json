@@ -1,0 +1,44 @@
+{
+  "facturas": {
+    "factura": ["(?i)(?:factura|número de factura)[:\\s-]*([A-Z0-9\\-/]+)"],
+    "fecha": ["(?i)fecha[:\\s-]*([0-9]{1,2}[/-][0-9]{1,2}[/-][0-9]{2,4})"],
+    "nit": ["(?i)(?:nit|cif)[:\\s-]*([0-9]+)"],
+    "cliente": ["(?i)cliente[:\\s-]*([A-Za-z0-9\\s]+)"],
+    "proveedor": ["(?i)proveedor[:\\s-]*([A-Za-z0-9\\s]+)"],
+    "subtotal": ["(?i)subtotal[:\\s-]*([0-9.,]+)"],
+    "iva": ["(?i)(?:iva|impuesto)[:\\s-]*([0-9.,%]+)"],
+    "total": ["(?i)total(?:\\s*a\\s*pagar)?[:\\s-]*([0-9.,]+)"],
+    "forma de pago": ["(?i)forma de pago[:\\s-]*([A-Za-z\\s]+)"],
+    "vencimiento": ["(?i)(?:vencimiento|expira|due date)[:\\s-]*([0-9]{1,2}[/-][0-9]{1,2}[/-][0-9]{2,4})"]
+  },
+  "recibos": {
+    "recibo": ["(?i)(?:recibo|número de recibo)[:\\s-]*([A-Z0-9\\-/]+)"],
+    "fecha": ["(?i)fecha[:\\s-]*([0-9]{1,2}[/-][0-9]{1,2}[/-][0-9]{2,4})"],
+    "concepto": ["(?i)concepto[:\\s-]*([A-Za-z0-9\\s]+)"],
+    "monto": ["(?i)(?:monto|valor|cantidad)[:\\s-]*([0-9.,]+)"],
+    "total": ["(?i)total[:\\s-]*([0-9.,]+)"],
+    "firma": ["(?i)firma[:\\s-]*([A-Za-z\\s]+)"]
+  },
+  "contratos": {
+    "contrato": ["(?i)(?:contrato|número de contrato)[:\\s-]*([A-Z0-9\\-/]+)"],
+    "fecha": ["(?i)fecha[:\\s-]*([0-9]{1,2}[/-][0-9]{1,2}[/-][0-9]{2,4})"],
+    "vigencia": ["(?i)vigencia[:\\s-]*([0-9]{1,2}[/-][0-9]{1,2}[/-][0-9]{2,4})"],
+    "valor": ["(?i)valor[:\\s-]*([0-9.,]+)"],
+    "firma": ["(?i)firma[:\\s-]*([A-Za-z\\s]+)"]
+  },
+  "historiales_medicos": {
+    "paciente": ["(?i)paciente[:\\s-]*([A-Za-z\\s]+)"],
+    "número de historia": ["(?i)(?:número de historia|historia clínica)[:\\s-]*([A-Z0-9\\-/]+)"],
+    "fecha": ["(?i)fecha[:\\s-]*([0-9]{1,2}[/-][0-9]{1,2}[/-][0-9]{2,4})"],
+    "diagnóstico": ["(?i)diagnóstico[:\\s-]*([A-Za-z0-9\\s]+)"],
+    "tratamiento": ["(?i)tratamiento[:\\s-]*([A-Za-z0-9\\s]+)"]
+  },
+  "documentos_generales": {
+    "documento": ["(?i)(?:documento|número de documento)[:\\s-]*([A-Z0-9\\-/]+)"],
+    "fecha": ["(?i)fecha[:\\s-]*([0-9]{1,2}[/-][0-9]{1,2}[/-][0-9]{2,4})"],
+    "nombre": ["(?i)nombre[:\\s-]*([A-Za-z\\s]+)"],
+    "identificación": ["(?i)(?:identificación|id)[:\\s-]*([A-Z0-9\\-/]+)"],
+    "total": ["(?i)total[:\\s-]*([0-9.,]+)"]
+  }
+}
+
